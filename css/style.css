@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   background: url("../image/background.png ") 0 0/100% no-repeat;
-  background-color: #ff0000;
+  background-color: #000000;
 }
 
 .header {
@@ -201,7 +201,7 @@ body {
 .footer {
   position: relative;
   height: auto;
-  background-color: #ff181800;
+  background-color: #000000;
   padding-top: 30px;
   padding-bottom: 30px;
 }
