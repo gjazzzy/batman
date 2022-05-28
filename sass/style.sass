@@ -7,11 +7,10 @@
 // Шапка 
 @import 'global'
 
-//header
+//background wrap
 .wrap
     height: 100vh
     position: relative
-
     &::after
         content: ""
         z-index: -1
@@ -27,7 +26,7 @@
         height: 100vh
         width: 100%
 
-    //modal
+//modal header
 .header__modal
     position: fixed
     display: flex
@@ -70,6 +69,7 @@
     background: transparent
     padding: 0
 
+//header
 .header
     &__wrap
         +normal
@@ -108,10 +108,12 @@
         padding: 0
         background: transparent
 
+//section-film (main)
 .film
 
     &__wrap
         margin-top: 100px
+        padding-bottom: 50px
         position: relative
         &::after
             position: absolute
@@ -158,19 +160,18 @@
         align-items: left
         margin-top: 100px
 
-/* Слайдер */
+// slider
 .slick-slider
     display: flex
     min-width: 0 // Всегда вкл
 
-/* Ограничивающая оболочка */
+// Ограничивающая оболочка 
 .slick-list
     overflow: hidden // Всегда вкл
 
-/* Лента слайдов */
+// Лента слайдов 
 .slick-track
     display: flex// Всегда вкл
-    // при вертикальном меняем flex на block
 
 /* Конкретный слайдер */
 .slider
@@ -180,11 +181,15 @@
 .slider__item
     text-align: left
 
+//footer
 .footer
+
     &__wrap
         +normal
         color: #686767
         padding: 20px 0
+
+// adatpiv
 @media screen and ( min-width:700px )
     .header__menu-btn
         display: none
@@ -202,3 +207,12 @@
 
     .header__social-list
         display: none
+
+    .film__wrap
+        margin-top: 20px
+
+    //background wrap
+    .wrap
+        height: 100%
+        &::after
+            height: 100%

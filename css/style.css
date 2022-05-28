@@ -260,6 +260,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .film__wrap {
   margin-top: 100px;
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -343,7 +344,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 100px;
 }
 
-/* Слайдер */
 .slick-slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,12 +351,10 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 0;
 }
 
-/* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
 }
 
-/* Лента слайдов */
 .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,6 +403,15 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header__social-list {
     display: none;
+  }
+  .film__wrap {
+    margin-top: 20px;
+  }
+  .wrap {
+    height: 100%;
+  }
+  .wrap::after {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
