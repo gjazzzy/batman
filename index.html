@@ -1,156 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style.sass">
-  <title>BatMan</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header class="header">
-    <div class="container d-flex justify-content-between">
-      <div class="row header-nav">
-        <a href="#" class="header-logo col-md-3"> <img src="image/icon-svg/header-logo.svg" alt="#" class="header-logo"></a>
-        <a href="#" class="header-link col-md-3">Описание</a>
-        <a href="#" class="header-link col-md-3">Трейлер</a>
-        <a href="#" class="header-link col-md-3">Отзывы</a>
-      </div>
-      <!-- /.row -->
-      <div class="row social ">
-          <a href="#" class="link-social col-md-4">
-            <img src="image/icon-svg/icon-twitter.svg" alt="#" class="image-social">
-          </a>
-            <a href="#" class="link-social col-md-4">
-              <img src="image/icon-svg/icon-instagram.svg" alt="#" class="image-social">
-            </a>
-            <a href="#" class="link-social col-md-4">
-              <img src="image/icon-svg/icon-facebook.svg" alt="#" class="image-social">
-            </a>
-        </div>
-      <!-- /.row -->   
-    </div>
-    <!-- /.container -->
-  </header>
-  <!-- /.header -->
+    <div class="wrap">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrap">
+                    <div class="header__menu">
 
-  <main class="main position-relative">
-    <div class="container">
-      <div class="row">
-        <div class="section-rating">
-          <span class="info-film d-block">
-            2022, боевик, триллер
-          </span>
-          <!-- /.info-film -->
+                        <a class="header__logo" href="#">
+                            <img src="image/logo.svg" alt="logo">
+                        </a>
+                        <!-- /.logo -->
 
-          <div class="rating-stars d-flex">
-            <button class="star-active">
-              <img src="image/icon-svg/star-activ.svg" alt="#" class="image-active-star">
-            </button>
-            <button class="star-active">
-              <img src="image/icon-svg/star-activ.svg" alt="#" class="image-active-star">
-            </button>
-            <button class="star-active">
-              <img src="image/icon-svg/star-activ.svg" alt="#" class="image-active-star">
-            </button>
-            <button class="star-active">
-              <img src="image/icon-svg/star-activ.svg" alt="#" class="image-active-star">
-            </button>
-            <button class="star-active">
-              <img src="image/icon-svg/star-activ.svg" alt="#" class="image-active-star">
-            </button>
-            <button class="star-active">
-              <img src="image/icon-svg/star-activ.svg" alt="#" class="image-active-star">
-            </button>
-            <button class="star-active">
-              <img src="image/icon-svg/star-activ.svg" alt="#" class="image-active-star">
-            </button>
-            <button class="not-active__star"><img src="image/icon-svg/star-NOactiv..svg" alt="#" class="image-no-active__star">
-            </button>
-            <button class="not-active__star"><img src="image/icon-svg/star-NOactiv..svg" alt="#" class="image-no-active__star">
-            </button>
-            <button class="not-active__star"><img src="image/icon-svg/star-NOactiv..svg" alt="#" class="image-no-active__star">
-            </button>
-            <span class="rating-number d-block">
-              7/10
-            </span>
-          </div>
-          <!-- /.rating-stars -->
-        </div>
-        <!-- /.section-rating -->
+                        <nav class="header__nav">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link link-line" href="#">
+                                        Описание
+                                    </a>
+                                </li>
+                                <!-- /.header__nav-item -->
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link link-line" href="#">
+                                        Трейлер
+                                    </a>
+                                </li>
+                                <!-- /.header__nav-item -->
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link link-line" href="#">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <!-- /.header__nav-item -->
+                            </ul>
+                            <!-- /.header__nav-list -->
+                        </nav>
+                        <!-- /.header__nav -->
+                    </div>
+                    <!-- /.header__menu -->
 
-        <div class="main-info d-flex">
-          <div class="info-srction">
-            <h1 class="main-title">Бэтмен</h1>
-            <div class="main-discription">
-              После двух лет поисков правосудия на улицах Готэма для своих сограждан <br> 
-              Бэтмен становится олицетворением беспощадного возмездия. Когда в городе <br> 
-              происходит серия жестоких нападений на представителей элиты, загадочные <br> 
-              улики приводят Брюса Уэйна в самые темные закоулки преступного мира. <br> 
-              Теперь под прицелом оказывается сам Бэтмен.
+                    <div class="header__social">
+                        <div class="header__hamburger-btn">
+                            <button class="header__menu-btn">
+                                <img src="image/sort_FILL0_wght300_GRAD200_opsz48.svg" alt="#">
+                            </button>
+                        </div>
+
+                        <nav class="header__social-menu">
+                            <ul class="header__social-list">
+                                <li class="header__social-item">
+                                    <a class="header__social-link" href="#">
+                                        <img src="image/facebook.svg" alt="#">
+                                    </a>
+                                </li>
+                                <!-- /.header__social-item -->
+                                <li class="header__social-item">
+                                    <a class="header__social-link" href="#">
+                                        <img src="image/twitter.svg" alt="#">
+                                    </a>
+                                </li>
+                                <!-- /.header__social-item -->
+                                <li class="header__social-item">
+                                    <a class="header__social-link" href="#">
+                                        <img src="image/instagram.svg" alt="#">
+                                    </a>
+                                </li>
+                                <!-- /.header__social-item -->
+                            </ul>
+                            <!-- /.header__social-list -->
+                        </nav>
+                        <!-- /.header__social-menu -->
+
+                    </div>
+                    <!-- /.header__social -->
+
+                    <div class="header__modal header__modal--close">
+                        <div class="modal__hamburger-btn">
+                            <button class="modal_menu-close">
+                                <img src="image//btn-close.svg" alt="#">
+                            </button>
+                        </div>
+                        <div class="modal__nav">
+                            <ul class="modal__menu">
+                                <li class="modal__item">
+                                    <a class="modal__link link-line" href="#">
+                                        Описание
+                                    </a>
+                                </li>
+                                <li class="modal__item">
+                                    <a class="modal__link link-line" href="#">
+                                        Трейлер
+                                    </a>
+                                </li>
+                                <li class="modal__item">
+                                    <a class="modal__link link-line" href="#">
+                                        Отзывы
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.modal__menu -->
+
+                        <nav class="modal__social-menu">
+                            <ul class="modal__social-list">
+                                <li class="modal__social-item">
+                                    <a class="modalr__social-link" href="#">
+                                        <img src="image/facebook.svg" alt="#">
+                                    </a>
+                                </li>
+                                <!-- /.modal__social-item -->
+                                <li class="modal__social-item">
+                                    <a class="modal__social-link" href="#">
+                                        <img src="image/twitter.svg" alt="#">
+                                    </a>
+                                </li>
+                                <!-- /.header__social-item -->
+                                <li class="modal__social-item">
+                                    <a class="modal__social-link" href="#">
+                                        <img src="image/instagram.svg" alt="#">
+                                    </a>
+                                </li>
+                                <!-- /.modal__social-item -->
+                            </ul>
+                            <!-- /.modal__social-list -->
+                        </nav>
+                        <!-- /.modal__social-menu -->
+                    </div>
+                    <!-- /.header__modal -->
+                </div>
+                <!-- /.header__wrap -->
             </div>
-          </div>
-          <div class="play-button">
-            <button class="main-button__play">
-              <img src="image/icon-svg/play-button.svg" alt="#" class="image-play">
-            </button>
-          </div>
-        </div>
-        <!-- /.main-info -->
+            <!-- /.container -->
+        </header>
+        <!-- /.header -->
 
-        <span class="section-button">
-          <button class="main-button">
-            Купить билеты
-          </button>
-        </span>
+        <main class="main">
+            <section class="film">
+                <div class="container">
+                    <div class="film__wrap">
+                        <div class="film__info">
+                            <span class="film__descr">2022, боевик, триллер</span>
+                            <div class="film__reit">
+                                <button class="film__btn-star">
+                                    <img src="image/star-fill.svg" alt="#">
+                                </button>
+                                <button class="film__btn-star">
+                                    <img src="image/star-fill.svg" alt="#">
+                                </button>
+                                <button class="film__btn-star">
+                                    <img src="image/star-fill.svg" alt="#">
+                                </button>
+                                <button class="film__btn-star">
+                                    <img src="image/star-fill.svg" alt="#">
+                                </button>
+                                <button class="film__btn-star">
+                                    <img src="image/star-fill.svg" alt="#">
+                                </button>
+                                <button class="film__btn-star">
+                                    <img src="image/star-fill.svg" alt="#">
+                                </button>
+                                <button class="film__btn-star">
+                                    <img src="image/star-fill.svg" alt="#">
+                                </button>
+                                <button class="film__btn-star">
+                                    <img src="image/star-fill.svg" alt="#">
+                                </button>
+                                <button class="film__btn-star">
+                                    <img src="image/star-fill.svg" alt="#">
+                                </button>
+                                <button class="film__btn-star">
+                                    <img src="image/star-fill.svg" alt="#">
+                                </button>
+                                <span class="film__reit-numb">7/10</span>
+                            </div>
+                            <!-- /.film__reit -->
+                            <h1 class="film__title">Бэтмен</h1>
+                            <p class="film__text">
+                                После двух лет поисков правосудия на улицах Готэма для своих сограждан Бэтмен становится
+                                олицетворением беспощадного
+                                возмездия. Когда в городе происходит серия жестоких нападений на представителей элиты,
+                                загадочные улики приводят Брюса
+                                Уэйна в самые темные закоулки преступного мира. Теперь под прицелом оказывается сам
+                                Бэтмен.
+                            </p>
+                            <button class="film__btn">Купить билет</button>
+                        </div>
+                        <!-- /.film__info -->
 
-        <div class="slider col-md-4 position-relative">
-          <div class="slider__item  ">
-            <img src="image/card-image3.png" alt="#" class="slider-img">
-          </div>
-             <div class="slider__item ">
-            <img src="image/card-image2.png" alt="#" class="slider-img">
+                        <div class="film__slider">
+                            <div class="slider">
+                                <div class="slider__item">
+                                    <img src="image/content/slider-1.png" class="slider-img" alt="#">
+
+                                </div>
+                                <div class="slider__item">
+                                    <img src="image/content/slider-2.png" class="slider-img" alt="#">
+
+                                </div>
+                                <div class="slider__item">
+                                    <img src="image/content/slider-3.png" class="slider-img" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.film__wrap -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.film -->
+        </main>
+        <!-- /.main -->
+    </div>
+    <!-- /.wrap -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__copyright">© 2022 The Batman. All right reserved.</div>
             </div>
-             <div class="slider__item  ">
-            <img src="image/card-image.png" alt="#" class="slider-img">
-          </div>
+            <!-- /.footer__wrap -->
         </div>
-        <!-- /.slider -->
-        <div class="button-nav position-absolute col-md-4"></div>
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </main>
-  <!-- /.main -->
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row d-flex justify-content-between">
-          <a href="#" class="info-root col-md-8">
-            © 2018 Acme. All rig
-          </a>
-          <!-- /.info-root -->
-          <div class="footer-menu d-flex col-md-4">
-            <a href="#" class="link-footer__item col-md-6">Privacy Policy</a>
-            <a href="#" class="link-footer__item col-md-4">Terms of Service</a>
-            <a href="#" class="link-footer__item col-md-2">Legal</a>
-          </div>
-          <!-- /.footer-menu -->
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </footer>
-  <!-- /.footer -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/slick.min.js"></script>
-	<script src="js/script.js"></script>
-  
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

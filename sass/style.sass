@@ -1,0 +1,204 @@
+// Базовые настройки 
+@import 'reset'
+
+//Шрифты
+@import 'fonts'
+
+// Шапка 
+@import 'global'
+
+//header
+.wrap
+    height: 100vh
+    position: relative
+
+    &::after
+        content: ""
+        z-index: -1
+        position: absolute
+        background-image: url('../image/content/cover.png')
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        top: 0
+        bottom: 1
+        right: 0
+        left: 0
+        height: 100vh
+        width: 100%
+
+    //modal
+.header__modal
+    position: fixed
+    display: flex
+    z-index: 1
+    top: 0
+    right: 0
+    bottom: 0
+    height: 100vh
+    background-color: #6b0000
+    align-items: center
+    flex-direction: column
+    width: 60%
+    box-shadow: 1px 0px 20px black
+    transition: all 0.5s
+    &.header__modal--close
+        transform: translateX(1000%)
+
+.modal__menu
+    +normal
+    font-size: 20px
+    margin-top: 20px
+    display: flex
+    text-align: center
+    flex-direction: column
+
+.modal__item
+    margin-bottom: 40px
+    margin-right: 20px
+
+.modal__social-list
+    display: flex
+    align-items: center
+
+.modal__social-item:not(:last-child)
+    margin-right: 20px
+
+.modal_menu-close
+    position: absolute
+    left: 0
+    background: transparent
+    padding: 0
+
+.header
+    &__wrap
+        +normal
+        display: flex
+        padding-top: 65px
+        justify-content: space-between
+        align-items: center
+
+    &__menu
+        display: flex
+        align-items: center
+
+    &__logo
+        margin-right: 40px
+
+    &__nav-list
+        display: flex
+        align-items: center
+
+    &__nav-item:not(:last-child)
+        margin-right: 24px
+
+    // header__sosial
+    &__social
+        display: flex
+        align-items: center
+
+    &__social-list
+        display: flex
+        align-items: center
+
+    &__social-item:not(:last-child)
+        margin-right: 20px
+
+    &__menu-btn
+        padding: 0
+        background: transparent
+
+.film
+
+    &__wrap
+        margin-top: 100px
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            background: url('../image/play-btn.png')
+            width: 100%
+            top: 0
+            right: 1
+            z-index: 2
+
+    &__info
+        +normal
+        display: flex
+        flex-direction: column
+        text-align: left
+
+    &__reit
+        margin-top: 16px
+
+    &__btn-star:not(:last-child)
+        margin-right: 5px
+        padding: 5px
+        background-color: transparent
+    &__btn-star
+        padding: 0
+        &:hover
+            transform: scale(1.1)
+
+    &__title
+        +bold
+        margin: 10px 0 8px 0
+        font-size: 76px
+        line-height: 91px
+
+    &__text
+        max-width: 614px
+        margin-bottom: 40px
+
+    &__btn
+        +bold
+        max-width: 245px
+
+    &__slider
+        align-items: left
+        margin-top: 100px
+
+/* Слайдер */
+.slick-slider
+    display: flex
+    min-width: 0 // Всегда вкл
+
+/* Ограничивающая оболочка */
+.slick-list
+    overflow: hidden // Всегда вкл
+
+/* Лента слайдов */
+.slick-track
+    display: flex// Всегда вкл
+    // при вертикальном меняем flex на block
+
+/* Конкретный слайдер */
+.slider
+    position: relative // Всегда вкл
+    max-width: 50%
+
+.slider__item
+    text-align: left
+
+.footer
+    &__wrap
+        +normal
+        color: #686767
+        padding: 20px 0
+@media screen and ( min-width:700px )
+    .header__menu-btn
+        display: none
+
+    .header__modal
+        display: none
+
+@media screen and ( max-width:1000px )
+    .container
+        padding: 0 20px
+
+@media screen and ( max-width:700px )
+    .header__nav
+        display: none
+
+    .header__social-list
+        display: none

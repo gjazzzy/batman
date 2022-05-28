@@ -1,0 +1,21 @@
+.link-line
+    padding-bottom: 5px
+    position: relative
+    text-decoration: none
+    color: #fff
+    &::before
+        content: ''
+        position: absolute
+        width: 0%
+        right: 0
+        bottom: 0
+        height: 2px
+        background-color: #ffffff
+        transition: 0.4s
+    &:hover::before
+        width: 100%
+        left: 0
+.container
+    max-width: 1500px
+    margin: 0 auto
+    padding: 0px 150px
