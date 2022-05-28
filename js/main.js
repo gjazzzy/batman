@@ -18,7 +18,7 @@ $(document).ready(function () {
     touchThreshold: 7, // Момент перелистыванья
     touchMove: true, // Ручное перелистыванье выкл
     waitForAnimate: true, // Быстрая перекрутка
-    centerMode: true, // Центральный слайд
+    centerMode: false, // Центральный слайд
     variableWidth: false, // Авто-Адаптивный слайдер 
     rows: 1, // Колонк
     vertical: false, // Вертикальный слайдер (без использовать с d:block)
@@ -31,8 +31,8 @@ $(document).ready(function () {
       breakpoint: 700,
       settings: {
         slidesToShow:1,
-        centerMode: true, // Центральный слайд
-        variableWidth: true, // Авто-Адаптивный слайдер
+        centerMode: false, // Центральный слайд
+        variableWidth: false, // Авто-Адаптивный слайдер
           touchThreshold: 1, // Момент перелистыванья
    
       }
